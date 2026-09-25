@@ -1,0 +1,94 @@
+{
+  "aid": "kronos.seshat.markets:apis",
+  "name": "Kronos Quant Signal API",
+  "description": "Multi-asset financial intelligence API with ML-based price-path forecasts, trading signals, and calibration metrics for crypto, commodities, and pre-market equities. 32 paid endpoints via x402 USDC micropayments on Base and Solana. No API keys required.",
+  "url": "https://kronos.seshat.markets/.well-known/apis.json",
+  "created": "2026-09-05",
+  "modified": "2026-09-05",
+  "specificationVersion": "0.20",
+  "tags": [
+    "finance",
+    "crypto",
+    "forecasting",
+    "prediction",
+    "x402",
+    "mcp",
+    "a2a",
+    "signals",
+    "commodities",
+    "api"
+  ],
+  "maintainers": [
+    {
+      "FN": "Seshat",
+      "email": "admin@seshat.markets",
+      "url": "https://seshat.markets"
+    }
+  ],
+  "apis": [
+    {
+      "aid": "kronos.seshat.markets:kronos-api",
+      "name": "Kronos Quant Signal API",
+      "description": "Multi-asset financial intelligence: price-path forecasts, trading signals, calibration metrics, market context, and regime detection. 32 endpoints from $0.001 to $0.05 per request via x402.",
+      "humanURL": "https://kronos.seshat.markets/docs",
+      "baseURL": "https://kronos.seshat.markets/api",
+      "image": "https://kronos.seshat.markets/assets/kronos-logo.png",
+      "version": "1.0.0",
+      "tags": [
+        "finance",
+        "crypto",
+        "forecasting",
+        "prediction",
+        "x402",
+        "mcp",
+        "a2a"
+      ],
+      "properties": [
+        {
+          "type": "Documentation",
+          "url": "https://kronos.seshat.markets/docs"
+        },
+        {
+          "type": "OpenAPI",
+          "url": "https://kronos.seshat.markets/openapi.json"
+        },
+        {
+          "type": "GettingStarted",
+          "url": "https://kronos.seshat.markets/docs#start"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://kronos.seshat.markets/docs#x402"
+        },
+        {
+          "type": "TermsOfService",
+          "url": "https://kronos.seshat.markets/docs#safety"
+        },
+        {
+          "type": "ChangeLog",
+          "url": "https://kronos.seshat.markets/road.md"
+        },
+        {
+          "type": "llms.txt",
+          "url": "https://kronos.seshat.markets/llms.txt"
+        },
+        {
+          "type": "MCP",
+          "url": "https://kronos.seshat.markets/docs#mcp"
+        },
+        {
+          "type": "A2A",
+          "url": "https://kronos.seshat.markets/a2a"
+        },
+        {
+          "type": "AgentCard",
+          "url": "https://kronos.seshat.markets/.well-known/agent.json"
+        },
+        {
+          "type": "x402",
+          "url": "https://kronos.seshat.markets/.well-known/x402"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+generated: '2026-09-25'
+method: derived
+source: openapi/kronos-seshat-openapi.json
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: x402Payment
+  type: apiKey
+  in: header
+  parameter: PAYMENT-SIGNATURE
+  description: x402 v2 payment payload. Required for paid endpoints when the service manifest
+    at /.well-known/x402 has enforcement=active_mainnet. Send the signed payment in this header
+    (or the legacy X-PAYMENT header) to satisfy the 402 challenge.
+  sources:
+  - openapi/kronos-seshat-openapi.json

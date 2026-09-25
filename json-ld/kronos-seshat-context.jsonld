@@ -1,0 +1,150 @@
+{
+  "@context": {
+    "@vocab": "https://seshat.markets/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "kronos": "https://seshat.markets/schema#",
+    "PlaygroundRequest": "kronos:PlaygroundRequest",
+    "timeframes": {
+      "@id": "kronos:timeframes",
+      "@container": "@list"
+    },
+    "config": {
+      "@id": "kronos:config"
+    },
+    "Error": "kronos:Error",
+    "error": {
+      "@id": "kronos:error",
+      "@type": "xsd:string"
+    },
+    "detail": {
+      "@id": "kronos:detail",
+      "@type": "xsd:string"
+    },
+    "KronosConsensus": "kronos:KronosConsensus",
+    "direction": {
+      "@id": "kronos:direction",
+      "@type": "xsd:string"
+    },
+    "confidence": {
+      "@id": "kronos:confidence",
+      "@type": "xsd:decimal"
+    },
+    "upside_prob_avg": {
+      "@id": "kronos:upside_prob_avg",
+      "@type": "xsd:decimal"
+    },
+    "total_timeframes": {
+      "@id": "kronos:total_timeframes",
+      "@type": "xsd:integer"
+    },
+    "agreeing_timeframes": {
+      "@id": "kronos:agreeing_timeframes",
+      "@type": "xsd:integer"
+    },
+    "KronosForecast": "kronos:KronosForecast",
+    "low": {
+      "@id": "kronos:low",
+      "@type": "xsd:decimal"
+    },
+    "high": {
+      "@id": "kronos:high",
+      "@type": "xsd:decimal"
+    },
+    "coverage": {
+      "@id": "kronos:coverage",
+      "@type": "xsd:decimal"
+    },
+    "predicted_at": {
+      "@id": "kronos:predicted_at",
+      "@type": "xsd:dateTime"
+    },
+    "method": {
+      "@id": "kronos:method",
+      "@type": "xsd:string"
+    },
+    "KronosTimeframeResult": "kronos:KronosTimeframeResult",
+    "pred_len": {
+      "@id": "kronos:pred_len",
+      "@type": "xsd:integer"
+    },
+    "pred_max": {
+      "@id": "kronos:pred_max",
+      "@type": "xsd:decimal"
+    },
+    "pred_min": {
+      "@id": "kronos:pred_min",
+      "@type": "xsd:decimal"
+    },
+    "elapsed_s": {
+      "@id": "kronos:elapsed_s",
+      "@type": "xsd:decimal"
+    },
+    "change_pct": {
+      "@id": "kronos:change_pct",
+      "@type": "xsd:decimal"
+    },
+    "upside_prob": {
+      "@id": "kronos:upside_prob",
+      "@type": "xsd:decimal"
+    },
+    "pred_candles": {
+      "@id": "kronos:pred_candles",
+      "@container": "@list"
+    },
+    "current_price": {
+      "@id": "kronos:current_price",
+      "@type": "xsd:decimal"
+    },
+    "predicted_price": {
+      "@id": "kronos:predicted_price",
+      "@type": "xsd:decimal"
+    },
+    "KronosSamplePolicy": "kronos:KronosSamplePolicy",
+    "symbol": {
+      "@id": "kronos:symbol",
+      "@type": "xsd:string"
+    },
+    "delay_minutes": {
+      "@id": "kronos:delay_minutes",
+      "@type": "xsd:integer"
+    },
+    "realtime": {
+      "@id": "kronos:realtime",
+      "@type": "xsd:boolean"
+    },
+    "KronosForecastResponse": "kronos:KronosForecastResponse",
+    "pair": {
+      "@id": "kronos:pair",
+      "@type": "xsd:string"
+    },
+    "timestamp": {
+      "@id": "kronos:timestamp",
+      "@type": "xsd:dateTime"
+    },
+    "consensus": {
+      "@id": "kronos:consensus",
+      "@type": "@id"
+    },
+    "forecast": {
+      "@id": "kronos:forecast",
+      "@type": "@id"
+    },
+    "sample": {
+      "@id": "kronos:sample",
+      "@type": "xsd:boolean"
+    },
+    "sample_policy": {
+      "@id": "kronos:sample_policy",
+      "@type": "@id"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Kronos Quant Signal API API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Kronos Quant Signal API's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-09-25) from openapi/kronos-seshat-openapi.json.",
+  "dcterms:created": "2026-09-25",
+  "dcterms:source": [
+    "openapi/kronos-seshat-openapi.json"
+  ]
+}

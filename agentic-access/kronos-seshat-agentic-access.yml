@@ -1,0 +1,342 @@
+generated: '2026-09-25'
+method: generated
+source: openapi/kronos-seshat-openapi.json
+description: Recommended x-agentic-access execution contracts, classified heuristically from
+  the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
+  audience per deployment. See research/curity/agentic-governance/.
+summary:
+  operations: 32
+  by_action_class:
+    connected: 31
+    acting: 1
+  by_consequence:
+    read: 31
+    write: 1
+  human_in_the_loop_required: 0
+operations:
+- path: /feeds/kronos/catalog
+  method: get
+  operationId: getKronosCatalog
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/sample/btc_usdt
+  method: get
+  operationId: getKronosSample
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/accuracy-preview/{symbolKey}
+  method: get
+  operationId: kronos_accuracy_preview
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/accuracy
+  method: get
+  operationId: getKronosAccuracy
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/accuracy/candles
+  method: get
+  operationId: kronos_accuracy_candles
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/accuracy/candles-preview
+  method: get
+  operationId: kronos_accuracy_candles_preview
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/conviction-signals
+  method: get
+  operationId: kronos_conviction_signals
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/risk
+  method: get
+  operationId: getKronosRisk
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/risk/history
+  method: get
+  operationId: kronos_risk_history
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/predict/{symbolKey}
+  method: get
+  operationId: getKronosPrediction
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/decision/{decisionId}
+  method: get
+  operationId: getKronosDecision
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/decisions
+  method: get
+  operationId: getKronosDecisions
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/forecast-evolution/{symbolKey}
+  method: get
+  operationId: getForecastEvolution
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/forecast-distribution/{symbolKey}
+  method: get
+  operationId: getKronosForecastDistribution
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/historical-analogs/{symbolKey}
+  method: get
+  operationId: getHistoricalAnalogs
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/regime
+  method: get
+  operationId: getKronosRegime
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/agent/track-record
+  method: get
+  operationId: getKronosAgentTrackRecord
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/agent/votes
+  method: get
+  operationId: getKronosAgentVotes
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/agent/signals
+  method: get
+  operationId: getKronosAgentSignals
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/composite-preview/{symbolKey}
+  method: get
+  operationId: kronos_composite_preview
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/composite/{symbolKey}
+  method: get
+  operationId: getKronosComposite
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/confluence/{symbolKey}
+  method: get
+  operationId: kronos_confluence
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/benchmark-preview
+  method: get
+  operationId: kronos_benchmark_preview
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/benchmark
+  method: get
+  operationId: kronos_benchmark
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/digest/{symbolKey}
+  method: get
+  operationId: kronos_digest
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/market-brief/{symbolKey}
+  method: get
+  operationId: kronos_market_brief
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/similar-markets
+  method: get
+  operationId: similar_markets_text
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/similar-markets/outcome-stats
+  method: get
+  operationId: similar_markets_outcome_stats
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/agent-intelligence/behavioral-correlations
+  method: get
+  operationId: behavioral_correlations
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/agent-intelligence/rationale-novelty
+  method: get
+  operationId: rationale_novelty
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/market-context/{symbolKey}
+  method: get
+  operationId: kronos_market_context
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /feeds/kronos/playground/{symbolKey}
+  method: post
+  operationId: runKronosPlayground
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required

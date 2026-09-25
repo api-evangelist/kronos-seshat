@@ -1,0 +1,65 @@
+generated: '2026-09-25'
+method: derived
+generator: derive-problem-types.py
+source:
+- openapi/kronos-seshat-agent-api-openapi.yml
+- openapi/kronos-seshat-agent-intelligence-api-openapi.yml
+- openapi/kronos-seshat-analysis-api-openapi.yml
+- openapi/kronos-seshat-discovery-api-openapi.yml
+- openapi/kronos-seshat-experimental-api-openapi.yml
+- openapi/kronos-seshat-forecast-api-openapi.yml
+- openapi/kronos-seshat-market-intelligence-api-openapi.yml
+- openapi/kronos-seshat-semantic-similarity-api-openapi.yml
+- openapi/kronos-seshat-signal-api-openapi.yml
+- openapi/kronos-seshat-verification-api-openapi.yml
+format: custom
+envelope:
+  media_type: application/json
+  schema: Error
+coverage:
+  operations: 32
+  statuses_declared: 6
+problems:
+- status: 402
+  title: Payment Required
+  description: x402 payment challenge. Returned by paid endpoints when no valid payment is provided. The response
+    body contains x402Version and accepts[] w
+  operations: 3
+  media_types:
+  - application/json
+  schema: null
+- status: 404
+  title: Not Found
+  description: Error response
+  operations: 9
+  media_types:
+  - application/json
+  schema: Error
+- status: 429
+  title: Too Many Requests
+  description: Error response
+  operations: 1
+  media_types:
+  - application/json
+  schema: Error
+- status: 500
+  title: Internal Server Error
+  description: Error response
+  operations: 1
+  media_types:
+  - application/json
+  schema: Error
+- status: 502
+  title: Bad Gateway
+  description: JSON response
+  operations: 1
+  media_types:
+  - application/json
+  schema: null
+- status: 503
+  title: Service Unavailable
+  description: Kronos is disabled
+  operations: 7
+  media_types:
+  - application/json
+  schema: Error

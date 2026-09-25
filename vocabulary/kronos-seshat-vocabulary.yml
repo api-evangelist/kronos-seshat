@@ -1,0 +1,46 @@
+generated: '2026-09-25'
+method: derived
+generator: derive-vocabulary.py
+source:
+- openapi/kronos-seshat-agent-api-openapi.yml
+- openapi/kronos-seshat-agent-intelligence-api-openapi.yml
+- openapi/kronos-seshat-analysis-api-openapi.yml
+- openapi/kronos-seshat-discovery-api-openapi.yml
+- openapi/kronos-seshat-experimental-api-openapi.yml
+vocabulary:
+  name: Kronos Quant Signal API Domain Vocabulary
+  description: 'Terms declared by Kronos Quant Signal API''s own API contract: its resource groups, objects and enumerations, with the contract''s
+    definitions. Derived, not authored.'
+  version: '2026-09-25'
+  terms:
+  - term: Error
+    definition: 'Object declared by the contract with fields: error, detail.'
+    tags:
+    - Object
+    source: openapi/kronos-seshat-agent-api-openapi.yml#/components/schemas/Error
+  - term: KronosForecastResponse
+    definition: Kronos forecast response shared by /sample and /predict endpoints.
+    tags:
+    - Object
+    source: openapi/kronos-seshat-discovery-api-openapi.yml#/components/schemas/KronosForecastResponse
+  - term: KronosConsensus
+    definition: Aggregate directional reading across the requested timeframes.
+    tags:
+    - Object
+    source: openapi/kronos-seshat-discovery-api-openapi.yml#/components/schemas/KronosConsensus
+  - term: KronosTimeframeResult
+    definition: 'Object declared by the contract with fields: pred_len, pred_max, pred_min, direction, elapsed_s, change_pct, upside_prob, pred_candles,
+      current_price, predicted_price.'
+    tags:
+    - Object
+    source: openapi/kronos-seshat-discovery-api-openapi.yml#/components/schemas/KronosTimeframeResult
+  - term: KronosSamplePolicy
+    definition: 'Object declared by the contract with fields: symbol, delay_minutes, realtime.'
+    tags:
+    - Object
+    source: openapi/kronos-seshat-discovery-api-openapi.yml#/components/schemas/KronosSamplePolicy
+  - term: KronosForecast
+    definition: Conformal calibrated price range.
+    tags:
+    - Object
+    source: openapi/kronos-seshat-discovery-api-openapi.yml#/components/schemas/KronosForecast

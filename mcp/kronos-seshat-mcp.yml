@@ -1,0 +1,183 @@
+generated: '2026-09-25'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/kronos-seshat-agent-api-openapi.yml
+- openapi/kronos-seshat-agent-intelligence-api-openapi.yml
+- openapi/kronos-seshat-analysis-api-openapi.yml
+- openapi/kronos-seshat-discovery-api-openapi.yml
+- openapi/kronos-seshat-experimental-api-openapi.yml
+- openapi/kronos-seshat-forecast-api-openapi.yml
+- openapi/kronos-seshat-market-intelligence-api-openapi.yml
+- openapi/kronos-seshat-semantic-similarity-api-openapi.yml
+- openapi/kronos-seshat-signal-api-openapi.yml
+- openapi/kronos-seshat-verification-api-openapi.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on api.seshat.markets, kronos.seshat.markets, seshat.markets; verdict
+  hold-unverified. Candidate tools below are derived from the 32 operation(s) in the provider's own OpenAPI (32 listed); they describe what a
+  server WOULD expose, not one that exists.
+tools:
+- name: get_kronos_agent_track_record
+  operationId: getKronosAgentTrackRecord
+  method: GET
+  path: /feeds/kronos/agent/track-record
+  description: GET /agent/track-record
+- name: behavioral_correlations
+  operationId: behavioral_correlations
+  method: GET
+  path: /feeds/agent-intelligence/behavioral-correlations
+  description: GET /feeds/agent-intelligence/behavioral-correlations
+- name: kronos_accuracy_preview
+  operationId: kronos_accuracy_preview
+  method: GET
+  path: /feeds/kronos/accuracy-preview/{symbolKey}
+  description: GET /accuracy-preview/:symbol
+- name: get_kronos_catalog
+  operationId: getKronosCatalog
+  method: GET
+  path: /feeds/kronos/catalog
+  description: GET /catalog
+- name: run_kronos_playground
+  operationId: runKronosPlayground
+  method: POST
+  path: /feeds/kronos/playground/{symbolKey}
+  description: POST /playground/:symbol
+- name: kronos_conviction_signals
+  operationId: kronos_conviction_signals
+  method: GET
+  path: /feeds/kronos/conviction-signals
+  description: GET /conviction-signals
+- name: kronos_market_brief
+  operationId: kronos_market_brief
+  method: GET
+  path: /feeds/kronos/market-brief/{symbolKey}
+  description: GET /market-brief/:symbol
+- name: similar_markets_text
+  operationId: similar_markets_text
+  method: GET
+  path: /feeds/similar-markets
+  description: GET /feeds/similar-markets
+- name: get_kronos_risk
+  operationId: getKronosRisk
+  method: GET
+  path: /feeds/kronos/risk
+  description: GET /risk
+- name: get_kronos_accuracy
+  operationId: getKronosAccuracy
+  method: GET
+  path: /feeds/kronos/accuracy
+  description: GET /accuracy
+- name: get_kronos_agent_votes
+  operationId: getKronosAgentVotes
+  method: GET
+  path: /feeds/kronos/agent/votes
+  description: GET /agent/votes
+- name: rationale_novelty
+  operationId: rationale_novelty
+  method: GET
+  path: /feeds/agent-intelligence/rationale-novelty
+  description: GET /feeds/agent-intelligence/rationale-novelty
+- name: kronos_accuracy_candles
+  operationId: kronos_accuracy_candles
+  method: GET
+  path: /feeds/kronos/accuracy/candles
+  description: GET /accuracy/candles
+- name: get_kronos_sample
+  operationId: getKronosSample
+  method: GET
+  path: /feeds/kronos/sample/btc_usdt
+  description: GET /sample/btc_usdt
+- name: get_kronos_prediction
+  operationId: getKronosPrediction
+  method: GET
+  path: /feeds/kronos/predict/{symbolKey}
+  description: GET /predict/:symbol?timeframes=
+- name: kronos_market_context
+  operationId: kronos_market_context
+  method: GET
+  path: /feeds/kronos/market-context/{symbolKey}
+  description: GET /market-context/:symbol
+- name: similar_markets_outcome_stats
+  operationId: similar_markets_outcome_stats
+  method: GET
+  path: /feeds/similar-markets/outcome-stats
+  description: GET /feeds/similar-markets/outcome-stats
+- name: get_kronos_decision
+  operationId: getKronosDecision
+  method: GET
+  path: /feeds/kronos/decision/{decisionId}
+  description: GET /decision/:id
+- name: get_kronos_agent_signals
+  operationId: getKronosAgentSignals
+  method: GET
+  path: /feeds/kronos/agent/signals
+  description: GET /agent/signals
+- name: kronos_accuracy_candles_preview
+  operationId: kronos_accuracy_candles_preview
+  method: GET
+  path: /feeds/kronos/accuracy/candles-preview
+  description: GET /accuracy/candles-preview
+- name: get_kronos_forecast_distribution
+  operationId: getKronosForecastDistribution
+  method: GET
+  path: /feeds/kronos/forecast-distribution/{symbolKey}
+  description: GET /forecast-distribution/:symbol?timeframes=
+- name: get_kronos_decisions
+  operationId: getKronosDecisions
+  method: GET
+  path: /feeds/kronos/decisions
+  description: GET /decisions
+- name: kronos_composite_preview
+  operationId: kronos_composite_preview
+  method: GET
+  path: /feeds/kronos/composite-preview/{symbolKey}
+  description: GET /composite-preview/:symbol
+- name: kronos_risk_history
+  operationId: kronos_risk_history
+  method: GET
+  path: /feeds/kronos/risk/history
+  description: GET /risk/history
+- name: kronos_digest
+  operationId: kronos_digest
+  method: GET
+  path: /feeds/kronos/digest/{symbolKey}
+  description: GET /digest/:symbol
+- name: kronos_confluence
+  operationId: kronos_confluence
+  method: GET
+  path: /feeds/kronos/confluence/{symbolKey}
+  description: GET /confluence/:symbol
+- name: get_forecast_evolution
+  operationId: getForecastEvolution
+  method: GET
+  path: /feeds/kronos/forecast-evolution/{symbolKey}
+  description: GET /forecast-evolution/:symbol
+- name: kronos_benchmark_preview
+  operationId: kronos_benchmark_preview
+  method: GET
+  path: /feeds/kronos/benchmark-preview
+  description: GET /benchmark-preview
+- name: get_historical_analogs
+  operationId: getHistoricalAnalogs
+  method: GET
+  path: /feeds/kronos/historical-analogs/{symbolKey}
+  description: GET /historical-analogs/:symbol
+- name: kronos_benchmark
+  operationId: kronos_benchmark
+  method: GET
+  path: /feeds/kronos/benchmark
+  description: GET /benchmark
+- name: get_kronos_regime
+  operationId: getKronosRegime
+  method: GET
+  path: /feeds/kronos/regime
+  description: GET /regime
+- name: get_kronos_composite
+  operationId: getKronosComposite
+  method: GET
+  path: /feeds/kronos/composite/{symbolKey}
+  description: GET /composite/:symbol

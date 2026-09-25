@@ -1,0 +1,15 @@
+generated: 2026-09-25
+method: none
+source: https://www.npmjs.com/search?q=kronos-seshat
+packages: []
+rejected:
+- name: '@kronos-integration/service'
+  registry: npm
+  reason: 'registry metadata names neither the provider''s domain nor its GitHub org: official downgraded (harvest-packages.py --audit)'
+- name: '@kronos-integration/interceptor'
+  registry: npm
+  reason: 'registry metadata names neither the provider''s domain nor its GitHub org: official downgraded (harvest-packages.py --audit)'
+- name: '@kronos-integration/endpoint'
+  registry: npm
+  reason: 'registry metadata names neither the provider''s domain nor its GitHub org: official downgraded (harvest-packages.py --audit)'
+note: 'no first-party package: every candidate a model listed was unowned (harvest-packages.py --audit)'

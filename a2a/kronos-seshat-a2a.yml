@@ -1,0 +1,46 @@
+generated: '2026-09-25'
+method: probed
+generator: harvest-agent-card.py
+source: https://kronos.seshat.markets/.well-known/agent-card.json
+card:
+  file: a2a/kronos-seshat-agent-card.json
+  name: null
+  version: 1.0.0
+discovery:
+  path: /.well-known/agent-card.json
+  canonical: true
+  host: kronos.seshat.markets
+x-evidence:
+  fetched: '2026-09-25'
+  url: https://kronos.seshat.markets/.well-known/agent-card.json
+  http_status: 200
+  content_type: application/json
+  body_bytes: 3509
+  body_parses_as: json object
+conformance:
+  spec: A2A 1.0.0
+  grade: flavored
+  protocol_version: '0.3'
+  transport: JSONRPC
+  card_shape: 0.3 (top-level protocolVersion)
+  hard_checks:
+    capabilities_is_object: false
+    protocol_version_present: true
+    skills_is_array: true
+  optional_fields:
+    transport_declared: true
+    defaultInputModes: true
+    defaultOutputModes: true
+  deviations: &id001
+  - check: capabilities_is_object
+    kind: hard
+    found: fails
+cards:
+- file: a2a/kronos-seshat-agent-card.json
+  primary: true
+  host: kronos.seshat.markets
+  url: https://kronos.seshat.markets/.well-known/agent-card.json
+  http_status: 200
+  name: null
+  grade: flavored
+  deviations: *id001

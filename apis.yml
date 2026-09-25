@@ -1,23 +1,203 @@
 aid: kronos-seshat
 name: Kronos Quant Signal API
-description: 'Kronos Quant Signal API is a company surfaced via the API Evangelist harvest backlog (source:
-  new-submission) and added to the network as a stub for full-pipeline profiling.'
+image: https://kronos.seshat.markets/assets/og-kronos.webp
+description: Kronos Quant Signal API provides crypto, commodity, and pre‑market equity financial forecast signals via a RESTful API. It delivers
+  multi‑timeframe OHLCV‑based predictions, audited model decisions, and risk metrics. Users can access live and delayed forecasts, risk assessments,
+  and historical accuracy data, enabling quantitative analysis and strategy development across digital and traditional assets.
 url: https://raw.githubusercontent.com/api-evangelist/kronos-seshat/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-09-25'
 modified: '2026-09-25'
 tags:
-- Company
-apis: []
+- Crypto
+- Financial Forecast
+- API
+- Market Data
+- Auditing
+- Micropayments
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: AgenticAccess
+  url: agentic-access/kronos-seshat-agentic-access.yml
+- type: Spectral
+  url: rules/kronos-seshat-rules.yml
+- type: JSONLD
+  url: json-ld/kronos-seshat-context.jsonld
+- type: Vocabulary
+  url: vocabulary/kronos-seshat-vocabulary.yml
+- type: DataModel
+  url: data-model/kronos-seshat-data-model.yml
+- type: ErrorCatalog
+  url: errors/kronos-seshat-problem-types.yml
+- type: Conformance
+  url: conformance/kronos-seshat-conformance.yml
+- type: LLMsTxt
+  url: llms/kronos-seshat-llms.txt
+- type: AgentCard
+  url: a2a/kronos-seshat-a2a.yml
+- type: WellKnown
+  url: well-known/kronos-seshat-well-known.yml
+- type: Hosts
+  url: hosts/kronos-seshat-hosts.yml
+- type: Vendors
+  url: vendors/kronos-seshat-vendors.yml
+- type: Security
+  url: https://kronos.seshat.markets/security
+- type: Sandbox
+  url: https://kronos.seshat.markets/api/playground
+- type: Authentication
+  url: authentication/kronos-seshat-authentication.yml
+- type: VulnerabilityDisclosure
+  url: security/kronos-seshat-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/kronos-seshat-domain-security.yml
 - type: Website
   url: https://kronos.seshat.markets/
+- type: Documentation
+  url: https://kronos.seshat.markets/docs
+- type: Pricing
+  url: https://kronos.seshat.markets/pricing
+- type: TermsOfService
+  url: https://kronos.seshat.markets/terms.html
+- type: PrivacyPolicy
+  url: https://kronos.seshat.markets/privacy.html
+- type: Support
+  url: https://kronos.seshat.markets/contact.html
+apis:
+- aid: kronos-seshat:kronos-seshat-agent-api
+  name: Kronos Quant Signal API Agent API
+  description: The Agent API from Kronos Quant Signal API — 7 operation(s) for agent.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Agent
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-agent-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+- aid: kronos-seshat:kronos-seshat-agent-intelligence-api
+  name: Kronos Quant Signal API Agent Intelligence API
+  description: >-
+    The Agent Intelligence API from Kronos Quant Signal API — 2 operation(s) for agent intelligence.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Agent Intelligence
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-agent-intelligence-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+- aid: kronos-seshat:kronos-seshat-analysis-api
+  name: Kronos Quant Signal API Analysis API
+  description: The Analysis API from Kronos Quant Signal API — 8 operation(s) for analysis.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Analysis
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-analysis-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+- aid: kronos-seshat:kronos-seshat-discovery-api
+  name: Kronos Quant Signal API Discovery API
+  description: The Discovery API from Kronos Quant Signal API — 2 operation(s) for discovery.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Discovery
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-discovery-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+- aid: kronos-seshat:kronos-seshat-experimental-api
+  name: Kronos Quant Signal API Experimental API
+  description: The Experimental API from Kronos Quant Signal API — 1 operation(s) for experimental.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Experimental
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-experimental-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+- aid: kronos-seshat:kronos-seshat-forecast-api
+  name: Kronos Quant Signal API Forecast API
+  description: The Forecast API from Kronos Quant Signal API — 4 operation(s) for forecast.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Forecast
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-forecast-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+- aid: kronos-seshat:kronos-seshat-market-intelligence-api
+  name: Kronos Quant Signal API Market Intelligence API
+  description: >-
+    The Market Intelligence API from Kronos Quant Signal API — 2 operation(s) for market intelligence.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Market Intelligence
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-market-intelligence-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+- aid: kronos-seshat:kronos-seshat-semantic-similarity-api
+  name: Kronos Quant Signal API Semantic Similarity API
+  description: >-
+    The Semantic Similarity API from Kronos Quant Signal API — 2 operation(s) for semantic similarity.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Semantic Similarity
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-semantic-similarity-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+- aid: kronos-seshat:kronos-seshat-signal-api
+  name: Kronos Quant Signal API Signal API
+  description: The Signal API from Kronos Quant Signal API — 1 operation(s) for signal.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Signal
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-signal-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+- aid: kronos-seshat:kronos-seshat-verification-api
+  name: Kronos Quant Signal API Verification API
+  description: The Verification API from Kronos Quant Signal API — 3 operation(s) for verification.
+  humanURL: https://kronos.seshat.markets/docs
+  baseURL: https://kronos.seshat.markets/api
+  tags:
+  - Verification
+  properties:
+  - type: OpenAPI
+    url: openapi/kronos-seshat-verification-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/kronos-seshat-kronos-forecast-response-schema.json
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 34
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

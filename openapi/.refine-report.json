@@ -1,0 +1,48 @@
+{
+  "provider": "kronos-seshat",
+  "sources": [
+    "_original/kronos-seshat-openapi.json"
+  ],
+  "outputs": [
+    "kronos-seshat-agent-api-openapi.yml",
+    "kronos-seshat-agent-intelligence-api-openapi.yml",
+    "kronos-seshat-analysis-api-openapi.yml",
+    "kronos-seshat-discovery-api-openapi.yml",
+    "kronos-seshat-experimental-api-openapi.yml",
+    "kronos-seshat-forecast-api-openapi.yml",
+    "kronos-seshat-market-intelligence-api-openapi.yml",
+    "kronos-seshat-semantic-similarity-api-openapi.yml",
+    "kronos-seshat-signal-api-openapi.yml",
+    "kronos-seshat-verification-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "kronos-seshat-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "kronos-seshat-openapi.json: declared missing tag: Agent",
+    "kronos-seshat-openapi.json: declared missing tag: Agent Intelligence",
+    "kronos-seshat-openapi.json: declared missing tag: Analysis",
+    "kronos-seshat-openapi.json: declared missing tag: Discovery",
+    "kronos-seshat-openapi.json: declared missing tag: Experimental",
+    "kronos-seshat-openapi.json: declared missing tag: Forecast",
+    "kronos-seshat-openapi.json: declared missing tag: Market Intelligence",
+    "kronos-seshat-openapi.json: declared missing tag: Semantic Similarity",
+    "kronos-seshat-openapi.json: declared missing tag: Signal",
+    "kronos-seshat-openapi.json: declared missing tag: Verification",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "kronos-seshat-agent-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kronos-seshat-agent-intelligence-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kronos-seshat-analysis-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kronos-seshat-discovery-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kronos-seshat-experimental-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kronos-seshat-forecast-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kronos-seshat-market-intelligence-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kronos-seshat-semantic-similarity-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kronos-seshat-signal-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kronos-seshat-verification-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
+}
