@@ -15,6 +15,12 @@ modified: '2026-09-25'
 tags:
 - Crypto
 - Financial Forecast
+- Market Data
+- Auditing
+- Micropayments
+tags_raw:
+- Crypto
+- Financial Forecast
 - API
 - Market Data
 - Auditing
@@ -78,6 +84,8 @@ apis:
   humanURL: https://kronos.seshat.markets/docs
   baseURL: https://kronos.seshat.markets/api
   tags:
+  - Agents
+  tags_raw:
   - Agent
   properties:
   - type: OpenAPI
