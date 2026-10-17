@@ -285,13 +285,43 @@ paths:
           amount: '0.030000'
 components:
   schemas:
-    Error:
+    KronosTimeframeResult:
       type: object
       properties:
-        error:
+        pred_len:
+          type: integer
+        pred_max:
+          type: number
+        pred_min:
+          type: number
+        direction:
           type: string
-        detail:
-          type: string
+          enum:
+          - LONG
+          - SHORT
+          - NEUTRAL
+        elapsed_s:
+          type: number
+        change_pct:
+          type: number
+        upside_prob:
+          type: number
+        pred_candles:
+          type: array
+          items:
+            type: array
+            items:
+              type: number
+            minItems: 4
+            maxItems: 4
+        current_price:
+          type: number
+        predicted_price:
+          type: number
+      required:
+      - direction
+      - current_price
+      - predicted_price
     KronosForecastResponse:
       type: object
       description: Kronos forecast response shared by /sample and /predict endpoints.
@@ -364,6 +394,13 @@ components:
       - direction
       - total_timeframes
       - agreeing_timeframes
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        detail:
+          type: string
     KronosSamplePolicy:
       type: object
       properties:
@@ -373,43 +410,6 @@ components:
           type: integer
         realtime:
           type: boolean
-    KronosTimeframeResult:
-      type: object
-      properties:
-        pred_len:
-          type: integer
-        pred_max:
-          type: number
-        pred_min:
-          type: number
-        direction:
-          type: string
-          enum:
-          - LONG
-          - SHORT
-          - NEUTRAL
-        elapsed_s:
-          type: number
-        change_pct:
-          type: number
-        upside_prob:
-          type: number
-        pred_candles:
-          type: array
-          items:
-            type: array
-            items:
-              type: number
-            minItems: 4
-            maxItems: 4
-        current_price:
-          type: number
-        predicted_price:
-          type: number
-      required:
-      - direction
-      - current_price
-      - predicted_price
   securitySchemes:
     x402Payment:
       type: apiKey
