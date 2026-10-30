@@ -64,5 +64,133 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Kronos Quant Signal API is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://kronos.seshat.markets/
+Kronos Quant Signal API provides crypto, commodity, and pre‑market equity financial forecast signals via a RESTful API. It delivers multi‑timeframe OHLCV‑based predictions, audited model decisions, and risk metrics. Users can access live and delayed forecasts, risk assessments, and historical accuracy data, enabling quantitative analysis and strategy development across digital and traditional assets.
+
+**Areas:** Cryptocurrency · Financial Forecast · Market Data · Auditing · Micropayments
+
+## Kronos Quant Signal API on APIs.io
+
+Everything profiled for Kronos Quant Signal API is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kronos-seshat/](https://apis.io/providers/kronos-seshat/)** — or go straight to one of the APIs or properties below.
+
+### APIs (10)
+
+- [Kronos Quant Signal API Agent API](https://apis.io/apis/kronos-seshat/kronos-seshat-agent-api/) — The Agent API from Kronos Quant Signal API — 7 operation(s) for agent.
+- [Kronos Quant Signal API Agent Intelligence API](https://apis.io/apis/kronos-seshat/kronos-seshat-agent-intelligence-api/) — The Agent Intelligence API from Kronos Quant Signal API — 2 operation(s) for agent intelligence.
+- [Kronos Quant Signal API Analysis API](https://apis.io/apis/kronos-seshat/kronos-seshat-analysis-api/) — The Analysis API from Kronos Quant Signal API — 8 operation(s) for analysis.
+- [Kronos Quant Signal API Discovery API](https://apis.io/apis/kronos-seshat/kronos-seshat-discovery-api/) — The Discovery API from Kronos Quant Signal API — 2 operation(s) for discovery.
+- [Kronos Quant Signal API Experimental API](https://apis.io/apis/kronos-seshat/kronos-seshat-experimental-api/) — The Experimental API from Kronos Quant Signal API — 1 operation(s) for experimental.
+- [Kronos Quant Signal API Forecast API](https://apis.io/apis/kronos-seshat/kronos-seshat-forecast-api/) — The Forecast API from Kronos Quant Signal API — 4 operation(s) for forecast.
+- [Kronos Quant Signal API Market Intelligence API](https://apis.io/apis/kronos-seshat/kronos-seshat-market-intelligence-api/) — The Market Intelligence API from Kronos Quant Signal API — 2 operation(s) for market intelligence.
+- [Kronos Quant Signal API Semantic Similarity API](https://apis.io/apis/kronos-seshat/kronos-seshat-semantic-similarity-api/) — The Semantic Similarity API from Kronos Quant Signal API — 2 operation(s) for semantic similarity.
+- [Kronos Quant Signal API Signal API](https://apis.io/apis/kronos-seshat/kronos-seshat-signal-api/) — The Signal API from Kronos Quant Signal API — 1 operation(s) for signal.
+- [Kronos Quant Signal API Verification API](https://apis.io/apis/kronos-seshat/kronos-seshat-verification-api/) — The Verification API from Kronos Quant Signal API — 3 operation(s) for verification.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [kronos-seshat-mcp.yml](https://apis.io/servers/kronos-seshat/kronos-seshat-mcp-yml/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Kronos Seshat Agentic Access](https://apis.io/agentic-access/kronos-seshat/kronos-seshat-agentic-access/)
+
+#### JSON Schema (1)
+
+The data models the API reads and writes.
+
+- [KronosForecastResponse](https://apis.io/schemas/kronos-seshat/kronos-seshat-kronos-forecast-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Kronos Seshat Context](https://apis.io/jsonld/kronos-seshat/kronos-seshat-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Kronos Quant Signal API API Rules](https://apis.io/rules/kronos-seshat/kronos-seshat-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kronos Seshat Authentication](https://apis.io/security/kronos-seshat/kronos-seshat-authentication/)
+- [Kronos Seshat Domain Security](https://apis.io/security/kronos-seshat/kronos-seshat-domain-security/)
+- [Kronos Seshat Vulnerability Disclosure](https://apis.io/security/kronos-seshat/kronos-seshat-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://kronos.seshat.markets/)
+- [Documentation](https://kronos.seshat.markets/docs)
+- [Pricing](https://kronos.seshat.markets/pricing)
+- [Support](https://kronos.seshat.markets/contact.html)
+- [Blog](https://seshat.markets/blog/)
+- [Security](https://kronos.seshat.markets/security)
+- [Terms of service](https://kronos.seshat.markets/terms.html)
+- [Privacy policy](https://kronos.seshat.markets/privacy.html)
+
+## API Evangelist rating
+
+**Kin Score 39.6** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 57.2 |
+| Contract governance | 22.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 31.6 |
+
+**Agent readiness 26.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | flavored (partial credit) |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 28.7** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kronos-seshat/](https://apis.io/providers/kronos-seshat/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kronos Quant Signal API: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kronos-seshat/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
